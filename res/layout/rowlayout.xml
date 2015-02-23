@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:onClick="show"
+    android:layout_margin="10dp"
+    android:id="@+id/my_card_view"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/my_layout"
+        android:clickable="true">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="10pt"
+            android:text="TV Show Title"
+            android:paddingLeft="3pt"
+            android:paddingRight="3pt"
+            android:paddingBottom="1pt"
+            >
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/im_thumbnail"
+            android:layout_below="@id/tv_title"
+            android:paddingLeft="3pt"
+            android:paddingRight="3pt"
+            android:paddingBottom="2pt"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_toRightOf="@id/im_thumbnail"
+            android:layout_below="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="6pt"
+            android:layout_marginTop="5pt"
+            android:paddingLeft="4pt"
+            android:paddingRight="4pt"
+            >
+        </TextView>
+
+
+        <Button android:id="@+id/bt_duration"
+            android:layout_toRightOf="@id/im_thumbnail"
+            android:layout_below="@id/tv_description"
+            android:layout_width="45pt"
+            android:layout_height="12pt"
+            android:background="#ff1f9fff"
+            android:textColor="#000000"
+            android:textSize="6pt"
+            android:text="Duration"
+            android:layout_marginLeft="4pt"
+            android:layout_marginTop="5pt"
+            />
+
+        <Button android:id="@+id/bt_trailer"
+            android:layout_toRightOf="@id/bt_duration"
+            android:layout_below="@id/tv_description"
+            android:layout_width="45pt"
+            android:layout_height="12pt"
+            android:background="#ffdf6c31"
+            android:textColor="#000000"
+            android:textSize="5pt"
+            android:text="View Trailer"
+            android:layout_marginLeft="4pt"
+            android:layout_marginTop="5pt"
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

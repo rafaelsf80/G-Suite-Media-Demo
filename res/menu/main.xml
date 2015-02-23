@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.google.MediaMD.Main" >
+
+
+    <item android:id="@+id/options_refresh_data"
+        android:title="Refresh"></item>
+
+</menu>

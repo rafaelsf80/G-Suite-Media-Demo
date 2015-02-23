@@ -1,0 +1,97 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.google.retailAppWithConfig.itemdetails">
+
+    <TextView
+        android:id="@+id/title_DT"
+        android:gravity="center"
+        android:textSize="12pt"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/mainimage_DT"
+        android:layout_below="@id/title_DT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3pt"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="4pt"
+        />
+
+
+    <Button android:id="@+id/bt_duration_DT"
+        android:layout_below="@id/mainimage_DT"
+        android:layout_width="60pt"
+        android:layout_height="12pt"
+        android:background="#ff1f9fff"
+        android:textColor="#ff000000"
+        android:textSize="6pt"
+        android:text="Duration"
+        android:layout_marginLeft="12pt"
+        android:layout_marginBottom="4pt"
+        />
+
+    <Button android:id="@+id/bt_trailer_DT"
+        android:layout_below="@id/mainimage_DT"
+        android:layout_toRightOf="@id/bt_duration_DT"
+        android:layout_width="60pt"
+        android:layout_height="12pt"
+        android:background="#ffdf6c31"
+        android:textColor="#ff000000"
+        android:textSize="6pt"
+        android:text="View Trailer"
+        android:layout_marginLeft="4pt"
+        android:layout_marginBottom="4pt"
+        />
+
+    <TextView
+        android:id="@+id/tv_description_DT"
+        android:layout_below="@id/bt_duration_DT"
+        android:layout_marginTop="3pt"
+        android:textSize="8pt"
+        android:text="Description"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_contentProvider_DT"
+        android:layout_below="@id/tv_description_DT"
+        android:layout_marginTop="3pt"
+        android:textSize="8pt"
+        android:text="Content Provider"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/metadata_DT"
+        android:layout_below="@id/tv_contentProvider_DT"
+        android:layout_marginTop="3pt"
+        android:textSize="8pt"
+        android:text="Meta Data"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
+
+    </ScrollView>

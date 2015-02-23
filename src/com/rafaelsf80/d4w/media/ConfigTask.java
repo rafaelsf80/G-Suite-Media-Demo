@@ -36,7 +36,7 @@ public class ConfigTask extends AsyncTask<Void, Void, Void> {
         try {
             HttpClient hc = new DefaultHttpClient();
             // The script must be on gmail.com account to access anonimously
-            String 	URL = "https://script.google.com/macros/s/AKfycbx_SoYcUoW0A2wMzO5gQIYZaE_e1S5xUee2ta16M5BXZaq_N6E/exec";
+            String 	URL = "https://script.google.com/macros/s/AKfycbwfuJixXKcNKxZVkBeO1TVEJOSL9TdJxLkFnWR3wY1HC9DteiZ2/exec";
             HttpGet get = new HttpGet(URL);
             HttpResponse rp = hc.execute(get);
 

@@ -37,10 +37,11 @@ public class DataTask extends AsyncTask<Void, Void, Void> {
         try {
             HttpClient hc = new DefaultHttpClient();
             // The script must be on gmail.com account to access anonimously
-            String 	URL = "https://script.google.com/macros/s/AKfycbzz0Q0Z5p3sBG6m1pRNAiiJHnKNFmf82VvMhFS95OyIJXJUhQ/exec";
+            String 	URL = "https://script.google.com/macros/s/AKfycbz4g384zrcs2qdHmVxkhOfMkCWn2zzxuLDF8HdVIR5vV5T0Okc/exec";
             HttpGet get = new HttpGet(URL);
             HttpResponse rp = hc.execute(get);
 
+         
             // grab JSON from the URL above and store it in the items class
             Log.d(TAG, "Status Code " + Integer.toString(rp.getStatusLine().getStatusCode()));
             if(rp.getStatusLine().getStatusCode() == HttpStatus.SC_OK)
